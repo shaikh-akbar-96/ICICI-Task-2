@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #e0dddd;
+  font-family: Open Sans;
+}
+
+.icici_main_container {
+  width: 960px;
+  background-color: #f6f6f6;
+
+  .icici_nav {
+    color: #fff;
+  }
+
+  .icici_logo {
+    display: block;
+    margin: 2px 0px 11px 15px;
+  }
+
+  .icici_border {
+    height: 50px;
+    background: linear-gradient(180deg, #f58f22 1.19%, #ef6712 100%);
+  }
+  .icici_wrapper {
+    width: 720px;
+    border-radius: 10px;
+    border: 0.5px solid #cfd7ed;
+    margin: 0 120px 0 120px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
+
+    .icici_user_info {
+      .icici_note {
+        color: #414141;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 20px 20px 15px;
+      }
+      .icici_userId {
+        color: #414141;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 30px 20px;
+      }
+      .icici_acc_status {
+        color: #414141;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        margin: 0 0 10px 20px;
+      }
+    }
+    .icici_tbl_info {
+      border-collapse: collapse;
+      width: 680px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
+      margin: 0 20px 30px 20px;
+      tr {
+        th {
+          height: 46px;
+          padding: 8px;
+          background: #ffe6d1;
+          text-align: center;
+          border-bottom: 1px solid #cfd7ed;
+        }
+        td {
+          padding: 8px;
+          //   margin: 20px 0 20px 0;
+          text-align: center;
+          border-bottom: 1px solid #cfd7ed;
+        }
+      }
+    }
+    .icici_acc_status {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      margin: 0 0 10px 20px;
+    }
+
+    .icici_tbl_info_2 {
+      border-collapse: collapse;
+      width: 680px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
+      margin: 0 20px 41px 20px;
+      tr {
+        th {
+          height: 46px;
+          padding: 8px;
+          background: #ffe6d1;
+          text-align: center;
+          border-bottom: 1px solid #cfd7ed;
+        }
+        td {
+          padding: 8px;
+          //   margin: 20px 0 20px 0;
+          text-align: center;
+          border-bottom: 1px solid #cfd7ed;
+        }
+      }
+    }
+    .icici_terms_cond {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0 58px 11px 20px;
+      text-align: left;
+      input {
+      }
+      .icici_checkmark {
+      }
+    }
+    .icici_terms_cond2 {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0 58px 30px 20px;
+      text-align: left;
+      input {
+      }
+      .icici_checkmark {
+      }
+    }
+    .icici_proceed_btn {
+      width: 131px;
+      height: 39px;
+      margin: 0 0 10px 20px;
+      border-radius: 20px;
+      background: #f27b1a;
+      color: #fff;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      outline: none;
+      border: 0;
+    }
+    .icici_query_note {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      margin: 0 0 40px 20px;
+
+      .icici_query_link {
+        color: #176abe;
+        font-weight: 600;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
