@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 *,
+table,
+label,
+input,
+span,
 th,
 td {
   padding: 0;
@@ -55,28 +59,28 @@ body {
   text-decoration-line: underline;
   text-transform: capitalize;
 }
-.icici_main_container .icici_dotted_completion {
+.icici_main_container .icici_stepper {
   position: relative;
   width: 960px;
   margin: 0 0 10px 147px;
 }
-.icici_main_container .icici_dotted_completion .icici_line {
+.icici_main_container .icici_stepper .icici_line {
   position: relative;
   height: 2px;
   width: 66.66%;
   background: linear-gradient(to right, transparent 33.33%, #c4c4c4 33.33%, #c4c4c4 66.66%, transparent 66.66%);
   background-size: 20px 100%;
 }
-.icici_main_container .icici_dotted_completion .icici_destination_checkbox {
+.icici_main_container .icici_stepper .icici_destination_checkbox {
   width: 20px;
   height: 20px;
   position: absolute;
   top: -13px;
 }
-.icici_main_container .icici_dotted_completion .icici_destination_checkbox:nth-child(2) {
+.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(2) {
   left: 33.33%;
 }
-.icici_main_container .icici_dotted_completion .icici_destination_checkbox:nth-child(3) {
+.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(3) {
   left: 66.66%;
 }
 .icici_main_container .icici_title_container {
@@ -233,24 +237,6 @@ body {
   line-height: 18px;
   margin: 0 0 10px 20px;
 }
-.icici_main_container .icici_wrapper .icici_terms_cond {
-  color: #414141;
-  font-family: Open Sans;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0 58px 11px 20px;
-  text-align: left;
-}
-.icici_main_container .icici_wrapper .icici_terms_cond2 {
-  color: #414141;
-  font-family: Open Sans;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0 58px 30px 20px;
-  text-align: left;
-}
 .icici_main_container .icici_wrapper .icici_proceed_btn {
   width: 131px;
   height: 39px;
@@ -280,4 +266,73 @@ body {
   color: #176abe;
   font-weight: 600;
   text-decoration-line: underline;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 0 15px 0 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox .icici_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16.369px;
+  height: 16.369px;
+  border-radius: 5px;
+  border: 0.75px solid #6e8ca6;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox .icici_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.icici_main_container .icici_wrapper .icici_terms_cond {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 615px;
+  line-height: 16px;
+  margin: 0 0px 11px 47px;
+}
+.icici_main_container .icici_wrapper .icici_terms_cond2 {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 615px;
+  height: 15.639px;
+  line-height: 16px;
+  margin: 0 0px 30.3px 47px;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox input:checked ~ .icici_checkmark {
+  background-color: #f27b1a;
+  border: 0.75px solid #f27b1a;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox input:checked ~ .icici_checkmark:after {
+  display: block;
+}
+.icici_main_container .icici_wrapper .icici_terms_checkbox .icici_checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 2px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=index.css.map */

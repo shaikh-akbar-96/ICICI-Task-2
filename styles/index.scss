@@ -5,6 +5,10 @@ $background-color_2: white;
 $background-color_3: orange;
 
 *,
+table,
+label,
+input,
+span,
 th,
 td {
   padding: 0;
@@ -65,7 +69,7 @@ body {
     }
   }
 
-  .icici_dotted_completion {
+  .icici_stepper {
     position: relative;
     width: 960px;
     margin: 0 0 10px 147px;
@@ -268,24 +272,6 @@ body {
       margin: 0 0 10px 20px;
     }
 
-    .icici_terms_cond {
-      color: #414141;
-      font-family: Open Sans;
-      font-size: 11px;
-      font-weight: 400;
-      line-height: 16px;
-      margin: 0 58px 11px 20px;
-      text-align: left;
-    }
-    .icici_terms_cond2 {
-      color: #414141;
-      font-family: Open Sans;
-      font-size: 11px;
-      font-weight: 400;
-      line-height: 16px;
-      margin: 0 58px 30px 20px;
-      text-align: left;
-    }
     .icici_proceed_btn {
       width: 131px;
       height: 39px;
@@ -316,6 +302,75 @@ body {
         font-weight: 600;
         text-decoration-line: underline;
       }
+    }
+    .icici_terms_checkbox {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin: 0 15px 0 20px;
+      cursor: pointer;
+      font-size: 22px;
+      user-select: none;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .icici_checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16.369px;
+        height: 16.369px;
+        border-radius: 5px;
+        border: 0.75px solid #6e8ca6;
+      }
+      .icici_checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+    .icici_terms_cond {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left;
+      width: 615px;
+      line-height: 16px;
+      margin: 0 0px 11px 47px;
+    }
+    .icici_terms_cond2 {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left;
+      width: 615px;
+      height: 15.639px;
+      line-height: 16px;
+      margin: 0 0px 30.3px 47px;
+    }
+    .icici_terms_checkbox input:checked ~ .icici_checkmark {
+      background-color: #f27b1a;
+      border: 0.75px solid #f27b1a;
+    }
+    .icici_terms_checkbox input:checked ~ .icici_checkmark:after {
+      display: block;
+    }
+    .icici_terms_checkbox .icici_checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 2px;
+      height: 6px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
 }
