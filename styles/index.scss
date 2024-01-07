@@ -4,13 +4,7 @@ $background-color_1: #cad4da;
 $background-color_2: white;
 $background-color_3: orange;
 
-*,
-table,
-label,
-input,
-span,
-th,
-td {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -171,6 +165,7 @@ body {
       background: #fff;
       box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
       margin: 0 20px 30px 20px;
+      border-bottom: none;
       tr {
         th {
           color: #414141;
@@ -184,6 +179,7 @@ body {
           text-align: center;
           border-bottom: 1px solid #cfd7ed;
         }
+
         td {
           color: #4a4a4a;
           font-family: Open Sans;
@@ -262,7 +258,12 @@ body {
           }
         }
       }
+      tr:first-child th,
+      tr:last-child td {
+        border-bottom: none;
+      }
     }
+
     .icici_acc_status {
       color: #414141;
       font-family: Open Sans;

@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
-*,
-table,
-label,
-input,
-span,
-th,
-td {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -151,6 +145,7 @@ body {
   background: #fff;
   box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
   margin: 0 20px 30px 20px;
+  border-bottom: none;
 }
 .icici_main_container .icici_wrapper .icici_tbl_info tr th {
   color: #414141;
@@ -228,6 +223,10 @@ body {
 }
 .icici_main_container .icici_wrapper .icici_tbl_info tr td .slider.round:before {
   border-radius: 50%;
+}
+.icici_main_container .icici_wrapper .icici_tbl_info tr:first-child th,
+.icici_main_container .icici_wrapper .icici_tbl_info tr:last-child td {
+  border-bottom: none;
 }
 .icici_main_container .icici_wrapper .icici_acc_status {
   color: #414141;
