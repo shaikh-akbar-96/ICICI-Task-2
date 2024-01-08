@@ -207,7 +207,7 @@ body {
   content: "";
   height: 15px;
   width: 15px;
-  left: 2px;
+  left: 1px;
   bottom: 1px;
   background-color: white;
   transition: 0.4s;
