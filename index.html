@@ -19,7 +19,7 @@
       </div>
       <div class="icici_acc_link">
         <p class="icici_left_link">Link all your accounts</p>
-        <a class="icici_right_link">remind me later</a>
+        <a class="icici_right_link" href="#">remind me later</a>
       </div>
       <div class="icici_stepper">
         <div class="icici_line"></div>
@@ -107,8 +107,8 @@
           <tr>
             <td>1.</td>
             <td>Saving account</td>
-            <td>Username Testing 1</td>
-            <td>987601514444</td>
+            <td>Username Testing 4</td>
+            <td>787651444412</td>
             <td>
               <label class="icici_switch">
                 <input type="checkbox" class="icici_toggler_btn" />
@@ -120,8 +120,8 @@
           <tr>
             <td>2.</td>
             <td>Saving account</td>
-            <td>Test User 3</td>
-            <td>215516945675</td>
+            <td>Test User 5</td>
+            <td>529685741253</td>
             <td>
               <label class="icici_switch">
                 <input type="checkbox" class="icici_toggler_btn" />
@@ -144,35 +144,40 @@
             </td>
           </tr>
         </table>
-
         <div>
-          <label class="icici_terms_checkbox">
-            <input type="checkbox" checked="checked" />
+          <label for="icici_checkbox_1" class="icici_terms_checkbox">
+            <input type="checkbox" id="icici_checkbox_1" />
             <span class="icici_checkmark"></span>
           </label>
           <div class="icici_terms_cond">
-            I hereby agree to the
-            <a href="#" class="icici_link_term_condition">
-              Terms and Conditions</a
-            >
-            and authorize ICICI Bank to debit my savings account XXXX to
-            validate my request for removal of dormancy in selected accounts
+            <label for="icici_checkbox_1">
+              I hereby agree to the
+              <a href="#" class="icici_link_term_condition"
+                >Terms and Conditions</a
+              >
+              and authorize ICICI Bank to debit my savings account XXXX to
+              validate my request for removal of dormancy in selected accounts
+            </label>
           </div>
         </div>
         <div>
-          <label class="icici_terms_checkbox">
-            <input type="checkbox" checked="checked" />
+          <label for="icici_checkbox_2" class="icici_terms_checkbox">
+            <input type="checkbox" id="icici_checkbox_2" />
             <span class="icici_checkmark"></span>
           </label>
           <div class="icici_terms_cond2">
-            I understand that by clicking on proceed I authorize ICICI Bank to
-            activate and link my accounts to User id - Shuklaret
+            <label for="icici_checkbox_2">
+              I understand that by clicking on proceed I authorize ICICI Bank to
+              activate and link my accounts to User id - Shuklaret
+            </label>
           </div>
         </div>
-        <button class="icici_proceed_btn">PROCEED</button>
+
+        <button class="icici_proceed_btn" disabled>PROCEED</button>
         <p class="icici_query_note">
           If any account displayed above does not belong to you, Please contact
-          <a class="icici_query_link">Customer Care</a> or visit branch.
+          <a class="icici_query_link" href="#">Customer Care</a> or visit
+          branch.
         </p>
       </section>
     </main>

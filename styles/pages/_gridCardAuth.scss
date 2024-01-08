@@ -1,0 +1,65 @@
+.icici_main_container {
+  .icici_title_container_2 {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .icici_title_4 {
+      color: #414141;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 10px 0 33px 120px;
+    }
+    .icici_title_5 {
+      color: #414141;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .icici_title_6 {
+      color: #414141;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 10px 120px 33px 0;
+    }
+  }
+  .icici_grid_card_container {
+    width: 720px;
+    border-radius: 10px;
+    border: 0.5px solid #cfd7ed;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
+    margin: 0 120px 0 120px;
+
+    .icici_select_title {
+      color: #414141;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      margin: 20px 0 15px 23px;
+    }
+    .icici_account_info_table {
+      width: 473px;
+      border: 0.5px solid #cfd7ed;
+      border-radius: 10px;
+      background: #fff;
+      border-collapse: collapse;
+      text-align: left;
+      box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
+      margin: 0 0 20px 30px;
+      tr {
+        td:last-child {
+          border-right: 2px solid #cfd7ed;
+        }
+      }
+    }
+  }
+}
