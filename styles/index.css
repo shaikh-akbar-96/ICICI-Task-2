@@ -216,7 +216,7 @@ body {
   background-color: orange;
 }
 .icici_main_container .icici_wrapper .icici_tbl_info tr td input:checked + .slider:before {
-  transform: translateX(15px);
+  transform: translateX(16px);
 }
 .icici_main_container .icici_wrapper .icici_tbl_info tr td .slider.round {
   border-radius: 34px;
