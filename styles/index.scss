@@ -269,6 +269,9 @@ body {
       tr:last-child td {
         border-bottom: none;
       }
+      tr:first-child th {
+        height: 46px;
+      }
     }
 
     .icici_acc_status {

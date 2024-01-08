@@ -234,6 +234,9 @@ body {
 .icici_main_container .icici_wrapper .icici_tbl_info tr:last-child td {
   border-bottom: none;
 }
+.icici_main_container .icici_wrapper .icici_tbl_info tr:first-child th {
+  height: 46px;
+}
 .icici_main_container .icici_wrapper .icici_acc_status {
   color: #414141;
   font-family: Open Sans;
