@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --circle-size: 30px;
+  --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,8 +21,12 @@ body {
   width: 960px;
   background-color: #f6f6f6;
 }
+.icici_main_container .icici_content_wrapper {
+  max-width: 720px;
+}
 .icici_main_container .icici_nav {
   color: #fff;
+  width: 100%;
 }
 .icici_main_container .icici_logo {
   display: block;
@@ -32,18 +41,17 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 22px;
+  margin-bottom: 45px;
 }
 .icici_main_container .icici_acc_link .icici_left_link {
-  order: 1;
   color: #414141;
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 700;
-  margin: 22px 0 30px 140px;
+  margin-left: 20px;
 }
 .icici_main_container .icici_acc_link .icici_right_link {
-  order: 2;
-  margin: 31px 120px 28px 0;
   color: #004a7f;
   text-align: right;
   font-family: Open Sans;
@@ -56,63 +64,47 @@ body {
 }
 .icici_main_container .icici_stepper {
   position: relative;
-  width: 960px;
-  margin: 0 0 10px 147px;
+  width: 100%;
 }
 .icici_main_container .icici_stepper .icici_line {
   position: relative;
-  height: 2px;
-  width: 66.66%;
-  background: linear-gradient(to right, transparent 33.33%, #c4c4c4 33.33%, #c4c4c4 66.66%, transparent 66.66%);
+  height: 1px;
+  width: 91%;
+  left: 3%;
+  background: linear-gradient(to right, transparent 33.33%, #c4c4c4 33.33%, #c4c4c4 80.66%, transparent 66.66%);
   background-size: 20px 100%;
 }
 .icici_main_container .icici_stepper .icici_destination_checkbox {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -13px;
+  top: -15px;
 }
 .icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(2) {
-  left: 33.33%;
+  left: 3%;
 }
 .icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(3) {
-  left: 66.66%;
+  left: 47.33%;
+}
+.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(4) {
+  left: 91%;
 }
 .icici_main_container .icici_title_container {
-  width: 960px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 25px 0 13px;
 }
-.icici_main_container .icici_title_container .icici_title_1 {
+.icici_main_container .icici_title_container .icici_title {
   color: #414141;
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 700;
-  margin: 10px 0 16px 120px;
-}
-.icici_main_container .icici_title_container .icici_title_2 {
-  color: #414141;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-.icici_main_container .icici_title_container .icici_title_3 {
-  color: #414141;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 10px 120px 16px 0;
 }
 .icici_main_container .icici_wrapper {
-  width: 720px;
   border-radius: 10px;
   border: 0.5px solid #cfd7ed;
-  margin: 0 120px 0 120px;
   background: #fff;
   box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
 }
@@ -305,7 +297,7 @@ body {
   top: 4px;
   width: 9px;
   height: 7px;
-  background-image: url("/styles/images/icici_tick.svg");
+  background-image: url("/images/icici_tick.svg");
 }
 .icici_main_container .icici_wrapper .icici_terms_cond {
   color: #414141;
@@ -357,35 +349,26 @@ body {
   cursor: not-allowed;
 }
 
+.icici_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icici_main_container .icici_main_wrapper {
+  max-width: 720px;
+}
 .icici_main_container .icici_title_container_2 {
-  width: 960px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 25px 0 33px 0;
 }
-.icici_main_container .icici_title_container_2 .icici_title_4 {
+.icici_main_container .icici_title_container_2 .icici_title {
   color: #414141;
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 700;
-  margin: 10px 0 33px 120px;
-}
-.icici_main_container .icici_title_container_2 .icici_title_5 {
-  color: #414141;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-.icici_main_container .icici_title_container_2 .icici_title_6 {
-  color: #414141;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 10px 120px 33px 0;
 }
 .icici_main_container .icici_grid_card_container {
   width: 720px;
@@ -393,7 +376,10 @@ body {
   border: 0.5px solid #cfd7ed;
   background: #fff;
   box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
-  margin: 0 120px 0 120px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px;
 }
 .icici_main_container .icici_grid_card_container .icici_select_title {
   color: #414141;
@@ -401,18 +387,139 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  margin: 20px 0 15px 23px;
+  margin-bottom: 15px;
 }
-.icici_main_container .icici_grid_card_container .icici_account_info_table {
+.icici_main_container .icici_grid_card_container .icici_account_status_container {
   width: 473px;
-  border: 0.5px solid #cfd7ed;
+  font-size: 14px;
+  font-family: Open Sans;
   border-radius: 10px;
+  border: 0.5px solid #cfd7ed;
   background: #fff;
-  border-collapse: collapse;
-  text-align: left;
   box-shadow: 0px 2px 8px 0px rgba(222, 227, 242, 0.4);
-  margin: 0 0 20px 30px;
+  display: grid;
+  grid-template-columns: 289px auto;
 }
-.icici_main_container .icici_grid_card_container .icici_account_info_table tr td:last-child {
-  border-right: 2px solid #cfd7ed;
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+  border-right: 1px solid #cfd7ed;
+  gap: 25px;
+}
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_details .icici_user_saving_account,
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_details .icici_user_cc_account {
+  display: flex;
+  gap: 17px;
+}
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_details .icici_user_saving_account :first-child,
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_details .icici_user_cc_account :first-child {
+  min-width: 102px;
+  font-weight: 600;
+}
+.icici_main_container .icici_grid_card_container .icici_account_status_container .icici_user_account_status {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  font-weight: 700;
+  padding: 20px 30px 0;
+}
+.icici_main_container .icici_grid_card_container .icici_enter_grid_title {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 30px 0 15px;
+}
+.icici_main_container .icici_grid_card_container .icici_added_grid_card {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container {
+  display: flex;
+  justify-content: center;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  position: relative;
+  top: -5px;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_enter_digits {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 81px;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_enter_digits .icici_digits {
+  font-weight: 700;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_input_field {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_input_field .icici_input {
+  width: 55px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid #6e8ca6;
+  background: #fff;
+  outline: none;
+  text-align: center;
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_input_field input[type=number]::-webkit-outer-spin-button,
+.icici_main_container .icici_grid_card_container .icici_otp_container .icici_input_otp .icici_input_field input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.icici_main_container .icici_grid_card_container .icici_buttons {
+  margin-top: 40px;
+}
+.icici_main_container .icici_grid_card_container .icici_buttons .icici_send_otp_button {
+  width: 131px;
+  height: 39px;
+  background-color: #f27b1a;
+  color: white;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 30px;
+}
+.icici_main_container .icici_grid_card_container .icici_buttons .icici_send_otp_button:disabled {
+  background-color: #c4c4c4;
+  cursor: not-allowed;
+}
+.icici_main_container .icici_grid_card_container .icici_buttons .icici_back_button {
+  width: 131px;
+  height: 39px;
+  background-color: white;
+  color: #f27b1a;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid #f27b1a;
 }/*# sourceMappingURL=index.css.map */

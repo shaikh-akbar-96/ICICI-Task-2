@@ -9,60 +9,91 @@
   <body>
     <main class="icici_main_container">
       <div class="icici_nav">
-        <img
-          src="./styles/images/icici_logo.svg"
-          alt="icici_logo"
-          class="icici_logo"
-        />
+        <img src="/images/icici_logo.svg" alt="icici_logo" class="icici_logo" />
         <hr class="icici_border" />
       </div>
-      <div class="icici_acc_link">
-        <p class="icici_left_link">Link all your accounts</p>
-        <a class="icici_right_link">remind me later</a>
-      </div>
-      <div class="icici_stepper">
-        <div class="icici_line"></div>
-        <div class="icici_destination_checkbox">
-          <img src="./styles/images/icici_destination_check.svg" alt="" />
+      <section class="icici_main_wrapper">
+        <div class="icici_acc_link">
+          <p class="icici_left_link">Link all your accounts</p>
+          <a class="icici_right_link">remind me later</a>
         </div>
-        <div class="icici_destination_checkbox">
-          <img src="./styles/images/icici_destination_check.svg" alt="" />
+        <div class="icici_stepper">
+          <div class="icici_line"></div>
+          <div class="icici_destination_checkbox">
+            <img src="/images/icici_activation_checked.svg" alt="" />
+          </div>
+          <div class="icici_destination_checkbox">
+            <img src="/images/icici_destination_check.svg" alt="" />
+          </div>
+          <div class="icici_destination_checkbox">
+            <img src="/images/icici_destination_check.svg" alt="" />
+          </div>
         </div>
-        <div class="icici_destination_checkbox">
-          <img src="./styles/images/icici_activation_checked.svg" alt="" />
+        <div class="icici_title_container_2">
+          <div class="icici_title">
+            Activation<br />
+            and Linking
+          </div>
+          <div class="icici_title">
+            Grid Card<br />
+            Authentication
+          </div>
+          <div class="icici_title">
+            Request<br />
+            Confirmation
+          </div>
         </div>
-      </div>
-      <div class="icici_title_container_2">
-        <div class="icici_title_4">
-          Activation<br />
-          and Linking
+        <div class="icici_grid_card_container">
+          <p class="icici_select_title">Selected Accounts</p>
+          <div class="icici_account_status_container">
+            <div class="icici_user_account_details">
+              <div class="icici_user_saving_account">
+                <p>Saving account</p>
+                <div class="details">
+                  <p>Username Testing 1</p>
+                  <p>987601514444</p>
+                </div>
+              </div>
+              <div class="icici_user_cc_account">
+                <p>Credit Card</p>
+                <div class="details">
+                  <p>Username Testing 6</p>
+                  <p>569325854785</p>
+                </div>
+              </div>
+            </div>
+            <div class="icici_user_account_status">
+              <p>Activate</p>
+              <p>Activate and Link</p>
+            </div>
+          </div>
+          <p class="icici_enter_grid_title">
+            Please enter Grid card details and OTP to authorize your account
+          </p>
+          <p class="icici_added_grid_card">Grid Card</p>
+          <div class="icici_otp_container">
+            <div class="icici_ss_card">
+              <img src="/images/icici_ss.svg" alt="" />
+            </div>
+            <div class="icici_input_otp">
+              <p class="icici_enter_digits">
+                Please enter the following digits of your Debit Grid (This will
+                be on the back of your card) for Account Number :
+                <span class="icici_digits">000012XXXXXX</span>
+              </p>
+              <div class="icici_input_field">
+                <input type="number" maxlength="1" class="icici_input" />
+                <input type="number" maxlength="1" class="icici_input" />
+                <input type="number" maxlength="1" class="icici_input" />
+              </div>
+            </div>
+          </div>
+          <div class="icici_buttons">
+            <button class="icici_send_otp_button" disabled>SEND OTP</button>
+            <button class="icici_back_button">BACK</button>
+          </div>
         </div>
-        <div class="icici_title_5">
-          Grid Card<br />
-          Authentication
-        </div>
-        <div class="icici_title_6">
-          Request<br />
-          Confirmation
-        </div>
-      </div>
-      <div class="icici_grid_card_container">
-        <p class="icici_select_title">Selected Accounts</p>
-        <table class="icici_account_info_table">
-          <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-          </tr>
-          <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-          </tr>
-          <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-          </tr>
-        </table>
-      </div>
+      </section>
     </main>
 
     <script src="./index.js"></script>

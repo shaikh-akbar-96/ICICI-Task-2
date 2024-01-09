@@ -30,3 +30,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateProceedButtonState();
 });
+
+document.addEventListener("input", function (e) {
+  if (
+    e.target.tagName.toLowerCase() === "input" &&
+    e.target.type === "number"
+  ) {
+    const maxLength = parseInt(e.target.getAttribute("maxlength"));
+    const value = e.target.value;
+
+    if (value.length > maxLength) {
+      e.target.value = value.slice(0, maxLength);
+    }
+
+    if (value.length === maxLength) {
+      const nextInput = e.target.nextElementSibling;
+      if (nextInput && nextInput.tagName.toLowerCase() === "input") {
+        nextInput.focus();
+      }
+
+      // Check if all input fields are filled
+      const allInputsFilled = Array.from(
+        document.querySelectorAll('input[type="number"]')
+      ).every(
+        (input) =>
+          input.value.length === parseInt(input.getAttribute("maxlength"))
+      );
+
+      // Enable the button if all input fields are filled
+      const sendOtpButton = document.querySelector(".icici_send_otp_button");
+      if (allInputsFilled) {
+        sendOtpButton.removeAttribute("disabled");
+      } else {
+        sendOtpButton.setAttribute("disabled", "true");
+      }
+    }
+  }
+});
