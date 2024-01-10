@@ -515,6 +515,7 @@ body {
   text-transform: uppercase;
   border: none;
   margin-right: 30px;
+  outline: none;
 }
 .icici_main_container .icici_grid_card_container .icici_buttons .icici_send_otp_button:disabled {
   background-color: #c4c4c4;
@@ -533,4 +534,5 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   border: 2px solid #f27b1a;
+  outline: none;
 }/*# sourceMappingURL=main.css.map */
