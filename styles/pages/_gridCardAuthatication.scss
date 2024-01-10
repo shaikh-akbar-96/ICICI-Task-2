@@ -5,14 +5,22 @@
   .icici_main_wrapper {
     max-width: 720px;
   }
-  .icici_title_container_2 {
+  .icici_grid_title_container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 25px 0 33px 0;
 
-    .icici_title {
+    .icici_title_grid_active,
+    .icici_title_grid_card {
       color: #414141;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .icici_title_grid_request {
+      color: #c4c4c4;
       text-align: center;
       font-family: Open Sans;
       font-size: 14px;
