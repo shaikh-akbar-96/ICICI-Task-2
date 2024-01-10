@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateProceedButtonState();
 });
 
-
 document.addEventListener("input", function (e) {
   if (
     e.target.tagName.toLowerCase() === "input" &&
@@ -50,7 +49,7 @@ document.addEventListener("input", function (e) {
       (input) =>
         input.value.length === parseInt(input.getAttribute("maxlength"))
     );
-
+    console.log(allInputsFilled);
     const sendOtpButton = document.querySelector(".icici_send_otp_button");
 
     if (allInputsFilled) {

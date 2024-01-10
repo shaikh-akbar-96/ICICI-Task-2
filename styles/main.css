@@ -155,6 +155,9 @@ body {
   text-align: center;
   border-bottom: 1px solid #cfd7ed;
 }
+.icici_main_container .icici_wrapper .icici_tbl_info tr td:nth-child(2) {
+  text-align: left;
+}
 .icici_main_container .icici_wrapper .icici_tbl_info tr th:first-child {
   border-top-left-radius: 10px;
 }
