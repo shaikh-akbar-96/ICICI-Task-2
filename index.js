@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
   updateProceedButtonState();
 });
 
+function pageNavigate() {
+  window.location.href = "http://127.0.0.1:5500/gridcard.html";
+}
+
 document.addEventListener("input", function (e) {
   if (
     e.target.tagName.toLowerCase() === "input" &&
@@ -107,4 +111,8 @@ function showInputSection() {
 
   inputsection[0].style.display = "block";
   otpField[0].style.display = "none";
+}
+
+function navigateSuccess() {
+  window.location.href = "http://127.0.0.1:5500/successPage.html";
 }
