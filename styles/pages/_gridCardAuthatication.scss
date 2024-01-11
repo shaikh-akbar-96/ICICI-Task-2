@@ -165,6 +165,7 @@
         border: none;
         margin-right: 30px;
         outline: none;
+        cursor: pointer;
       }
       .icici_send_otp_button:disabled {
         background-color: #c4c4c4;
@@ -184,11 +185,13 @@
         text-transform: uppercase;
         border: 2px solid #f27b1a;
         outline: none;
+        cursor: pointer;
       }
     }
 
-    #icici_opt_verification {
-      padding: 30px 0 40px;
+    .icici_otp_verification {
+      margin-top: 30px;
+      display: none;
       .icici_generate_otp_title {
         color: #414141;
         font-family: Open Sans;
@@ -206,10 +209,14 @@
           width: 180px;
           height: 28px;
           border-radius: 7px;
-          padding: 4px 11px 6px;
+          padding: 6px 0 4px 11px;
           border: 1px solid #6e8ca6;
           background: #fff;
           outline: none;
+        }
+        .icici_generate_otp_input[type="text"] {
+          -webkit-text-security: disc; /* Safari and Chrome */
+          text-security: disc; /* Standard syntax */
         }
         .icici_input_generated_ss {
           margin: 0 15px 0 10px;
@@ -262,6 +269,12 @@
           border: none;
           margin-right: 30px;
           outline: none;
+          cursor: pointer;
+
+          &:disabled {
+            background-color: #c4c4c4;
+            cursor: not-allowed;
+          }
         }
         .icici_otp_back {
           width: 131px;
@@ -277,6 +290,7 @@
           text-transform: uppercase;
           border: 2px solid #f27b1a;
           outline: none;
+          cursor: pointer;
         }
       }
     }

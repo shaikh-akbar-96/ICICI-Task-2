@@ -17,9 +17,9 @@ Array.prototype.forEach.call(togglerElements, function (togglerEle, index) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var checkbox1 = document.getElementById("icici_checkbox_1");
-  var checkbox2 = document.getElementById("icici_checkbox_2");
-  var proceedBtn = document.querySelector(".icici_proceed_btn");
+  let checkbox1 = document.getElementById("icici_checkbox_1");
+  let checkbox2 = document.getElementById("icici_checkbox_2");
+  let proceedBtn = document.querySelector(".icici_proceed_btn");
 
   function updateProceedButtonState() {
     proceedBtn.disabled = !(checkbox1.checked && checkbox2.checked);
@@ -82,3 +82,29 @@ document.addEventListener("keydown", function (e) {
     sendOtpButton.setAttribute("disabled", "true");
   }
 });
+
+function checkInput() {
+  let otpInput = document.getElementById("otpInput");
+  let proceedButton = document.getElementById("proceedButton");
+  otpInput.addEventListener("input", function () {
+    let numericValue = otpInput.value.replace(/[^0-9]/g, "");
+    numericValue = numericValue.slice(0, 4);
+    otpInput.value = numericValue;
+    proceedButton.disabled = !(numericValue.length === 4);
+  });
+}
+
+function showOtpSection() {
+  let otpSection = document.getElementsByClassName("icici_otp_verification");
+  let buttonSection = document.getElementsByClassName("icici_buttons");
+  otpSection[0].style.display = "block";
+  buttonSection[0].style.display = "none";
+}
+
+function showInputSection() {
+  let inputsection = document.getElementsByClassName("icici_buttons");
+  let otpField = document.getElementsByClassName("icici_otp_verification");
+
+  inputsection[0].style.display = "block";
+  otpField[0].style.display = "none";
+}

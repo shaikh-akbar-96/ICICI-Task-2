@@ -88,15 +88,18 @@
               </div>
             </div>
           </div>
-          <div class="icici_buttons">
-            <button class="icici_send_otp_button" disabled>SEND OTP</button>
-            <button class="icici_back_button">BACK</button>
-          </div>
-          <section id="icici_opt_verification">
+          <section class="icici_otp_verification">
             <p class="icici_generate_otp_title">One Time Password</p>
             <div class="icici_generated_otp">
               <div class="_icici_input_otp_container">
-                <input type="password" class="icici_generate_otp_input" />
+                <input
+                  type="password"
+                  class="icici_generate_otp_input"
+                  id="otpInput"
+                  maxlength="4"
+                  oninput="checkInput()"
+                />
+
                 <img
                   src="/images/icici_input_img.svg"
                   alt="search"
@@ -118,10 +121,24 @@
               <a href="#" class="icici_otp_inquiry_link">Click Here</a>
             </p>
             <div class="icici_otp_buttons">
-              <button class="icici_otp_proceed">PROCEED</button>
-              <button class="icici_otp_back">BACK</button>
+              <button class="icici_otp_proceed" id="proceedButton" disabled>
+                PROCEED
+              </button>
+              <button class="icici_otp_back" onclick="showInputSection()">
+                BACK
+              </button>
             </div>
           </section>
+          <div class="icici_buttons">
+            <button
+              class="icici_send_otp_button"
+              onclick="showOtpSection()"
+              disabled
+            >
+              SEND OTP
+            </button>
+            <button class="icici_back_button">BACK</button>
+          </div>
         </div>
       </section>
     </main>
