@@ -186,5 +186,99 @@
         outline: none;
       }
     }
+
+    #icici_opt_verification {
+      padding: 30px 0 40px;
+      .icici_generate_otp_title {
+        color: #414141;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        // margin: 30px 0 10px 0;
+      }
+      .icici_generated_otp {
+        ._icici_input_otp_container {
+          display: flex;
+          align-items: center;
+        }
+        .icici_generate_otp_input {
+          width: 180px;
+          height: 28px;
+          border-radius: 7px;
+          padding: 4px 11px 6px;
+          border: 1px solid #6e8ca6;
+          background: #fff;
+          outline: none;
+        }
+        .icici_input_generated_ss {
+          margin: 0 15px 0 10px;
+        }
+        .icici_registered_generated_otp {
+          color: #414141;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        .icici_resend_otp {
+          color: #004a7f;
+          font-family: Open Sans;
+          font-size: 10px;
+          font-weight: 700;
+          text-decoration-line: underline;
+          margin-left: 120px;
+        }
+      }
+      .icici_otp_inquiry {
+        color: #414141;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin: 20px 119px 40px 0;
+        .icici_otp_inquiry_link {
+          color: #004a7f;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          text-decoration-line: underline;
+        }
+      }
+      .icici_otp_buttons {
+        .icici_otp_proceed {
+          width: 131px;
+          height: 39px;
+          background-color: #f27b1a;
+          color: white;
+          border-radius: 20px;
+          color: #fff;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          border: none;
+          margin-right: 30px;
+          outline: none;
+        }
+        .icici_otp_back {
+          width: 131px;
+          height: 39px;
+          background-color: white;
+          color: #f27b1a;
+          border-radius: 20px;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          border: 2px solid #f27b1a;
+          outline: none;
+        }
+      }
+    }
   }
 }
