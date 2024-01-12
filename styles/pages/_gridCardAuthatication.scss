@@ -1,3 +1,4 @@
+
 .icici_main_container {
   display: flex;
   flex-direction: column;
@@ -151,42 +152,21 @@
     .icici_buttons {
       margin-top: 40px;
       .icici_send_otp_button {
-        width: 131px;
-        height: 39px;
+        @include btn();
         background-color: #f27b1a;
         color: white;
-        border-radius: 20px;
-        color: #fff;
-        text-align: center;
-        font-family: Open Sans;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
         border: none;
         margin-right: 30px;
-        outline: none;
-        cursor: pointer;
       }
       .icici_send_otp_button:disabled {
         background-color: #c4c4c4;
         cursor: not-allowed;
       }
       .icici_back_button {
-        width: 131px;
-        height: 39px;
+        @include btn();
         background-color: white;
         color: #f27b1a;
-        border-radius: 20px;
-        text-align: center;
-        font-family: Open Sans;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
         border: 2px solid #f27b1a;
-        outline: none;
-        cursor: pointer;
       }
     }
 
@@ -199,7 +179,6 @@
         font-size: 14px;
         font-weight: 700;
         margin-bottom: 10px;
-        // margin: 30px 0 10px 0;
       }
       .icici_generated_otp {
         ._icici_input_otp_container {
@@ -216,8 +195,8 @@
           outline: none;
         }
         .icici_generate_otp_input[type="text"] {
-          -webkit-text-security: disc; /* Safari and Chrome */
-          text-security: disc; /* Standard syntax */
+          -webkit-text-security: disc;
+          text-security: disc;
         }
         .icici_input_generated_ss {
           margin: 0 15px 0 10px;
@@ -255,43 +234,22 @@
       }
       .icici_otp_buttons {
         .icici_otp_proceed {
-          width: 131px;
-          height: 39px;
+          @include btn();
           background-color: #f27b1a;
           color: white;
-          border-radius: 20px;
           color: #fff;
-          text-align: center;
-          font-family: Open Sans;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 0.5px;
-          text-transform: uppercase;
           border: none;
           margin-right: 30px;
-          outline: none;
-          cursor: pointer;
-
           &:disabled {
             background-color: #c4c4c4;
             cursor: not-allowed;
           }
         }
         .icici_otp_back {
-          width: 131px;
-          height: 39px;
+          @include btn();
           background-color: white;
           color: #f27b1a;
-          border-radius: 20px;
-          text-align: center;
-          font-family: Open Sans;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 0.5px;
-          text-transform: uppercase;
           border: 2px solid #f27b1a;
-          outline: none;
-          cursor: pointer;
         }
       }
     }

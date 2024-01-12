@@ -118,21 +118,11 @@
         line-height: 22px;
       }
       .icici_continue_button {
-        width: 131px;
-        height: 39px;
+        @include btn();
         margin-top: 30px;
-        border-radius: 20px;
         background: #f27b1a;
         color: #fff;
-        text-align: center;
-        font-family: Open Sans;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        outline: none;
         border: 0;
-        cursor: pointer;
       }
     }
   }

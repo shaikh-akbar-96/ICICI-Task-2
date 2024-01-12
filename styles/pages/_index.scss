@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
+
 .icici_main_container {
   width: 960px;
   background-color: #f6f6f6;
@@ -363,21 +364,11 @@
       cursor: pointer;
     }
     .icici_proceed_btn {
-      width: 131px;
-      height: 39px;
+      @include btn();
       margin: 0 0 10px 20px;
-      border-radius: 20px;
       background: #f27b1a;
       color: #fff;
-      text-align: center;
-      font-family: Open Sans;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      outline: none;
       border: 0;
-      cursor: pointer;
     }
     .icici_proceed_btn:disabled {
       background-color: #c4c4c4;

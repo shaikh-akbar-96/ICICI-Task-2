@@ -337,19 +337,19 @@ body {
 .icici_main_container .icici_wrapper .icici_proceed_btn {
   width: 131px;
   height: 39px;
-  margin: 0 0 10px 20px;
-  border-radius: 20px;
-  background: #f27b1a;
-  color: #fff;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
-  outline: none;
+  margin: 0 0 10px 20px;
+  background: #f27b1a;
+  color: #fff;
   border: 0;
-  cursor: pointer;
 }
 .icici_main_container .icici_wrapper .icici_proceed_btn:disabled {
   background-color: #c4c4c4;
@@ -508,20 +508,19 @@ body {
 .icici_main_container .icici_grid_card_container .icici_buttons .icici_send_otp_button {
   width: 131px;
   height: 39px;
-  background-color: #f27b1a;
-  color: white;
-  border-radius: 20px;
-  color: #fff;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
+  background-color: #f27b1a;
+  color: white;
   border: none;
   margin-right: 30px;
-  outline: none;
-  cursor: pointer;
 }
 .icici_main_container .icici_grid_card_container .icici_buttons .icici_send_otp_button:disabled {
   background-color: #c4c4c4;
@@ -530,18 +529,18 @@ body {
 .icici_main_container .icici_grid_card_container .icici_buttons .icici_back_button {
   width: 131px;
   height: 39px;
-  background-color: white;
-  color: #f27b1a;
-  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
+  background-color: white;
+  color: #f27b1a;
   border: 2px solid #f27b1a;
-  outline: none;
-  cursor: pointer;
 }
 .icici_main_container .icici_grid_card_container .icici_otp_verification {
   margin-top: 30px;
@@ -568,8 +567,8 @@ body {
   outline: none;
 }
 .icici_main_container .icici_grid_card_container .icici_otp_verification .icici_generated_otp .icici_generate_otp_input[type=text] {
-  -webkit-text-security: disc; /* Safari and Chrome */
-  text-security: disc; /* Standard syntax */
+  -webkit-text-security: disc;
+  text-security: disc;
 }
 .icici_main_container .icici_grid_card_container .icici_otp_verification .icici_generated_otp .icici_input_generated_ss {
   margin: 0 15px 0 10px;
@@ -607,20 +606,20 @@ body {
 .icici_main_container .icici_grid_card_container .icici_otp_verification .icici_otp_buttons .icici_otp_proceed {
   width: 131px;
   height: 39px;
-  background-color: #f27b1a;
-  color: white;
-  border-radius: 20px;
-  color: #fff;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
+  background-color: #f27b1a;
+  color: white;
+  color: #fff;
   border: none;
   margin-right: 30px;
-  outline: none;
-  cursor: pointer;
 }
 .icici_main_container .icici_grid_card_container .icici_otp_verification .icici_otp_buttons .icici_otp_proceed:disabled {
   background-color: #c4c4c4;
@@ -629,18 +628,18 @@ body {
 .icici_main_container .icici_grid_card_container .icici_otp_verification .icici_otp_buttons .icici_otp_back {
   width: 131px;
   height: 39px;
-  background-color: white;
-  color: #f27b1a;
-  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
+  background-color: white;
+  color: #f27b1a;
   border: 2px solid #f27b1a;
-  outline: none;
-  cursor: pointer;
 }
 
 .icici_main_container {
@@ -761,17 +760,17 @@ body {
 .icici_main_container .icici_success_container .icici_request_context .icici_continue_button {
   width: 131px;
   height: 39px;
-  margin-top: 30px;
-  border-radius: 20px;
-  background: #f27b1a;
-  color: #fff;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   text-transform: uppercase;
-  outline: none;
+  margin-top: 30px;
+  background: #f27b1a;
+  color: #fff;
   border: 0;
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
