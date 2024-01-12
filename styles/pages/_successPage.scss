@@ -2,6 +2,33 @@
   width: 960px;
   background-color: #f6f6f6;
 
+  .icici_stepper_success_main {
+    position: relative;
+    width: 100%;
+    .icici_line_success_main {
+      position: relative;
+      height: 1px;
+      width: 91%;
+      left: 3%;
+      background-image: url("/images/icici_success_stepper.svg");
+    }
+    .icici_destination_checkbox {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+    }
+    .icici_destination_checkbox:nth-child(2) {
+      left: 3%;
+    }
+    .icici_destination_checkbox:nth-child(3) {
+      left: 47.33%;
+    }
+    .icici_destination_checkbox:nth-child(4) {
+      left: 91%;
+    }
+  }
+
   .icici_success_container {
     width: 720px;
     border-radius: 10px;
@@ -79,17 +106,10 @@
       .icici_success_line {
         position: relative;
         height: 1px;
-        width: 76%;
+        width: 74%;
         left: 10%;
         margin-bottom: 35px;
-        background: linear-gradient(
-          to right,
-          transparent 33.33%,
-          #c4c4c4 33.33%,
-          #c4c4c4 80.66%,
-          transparent 66.66%
-        );
-        background-size: 20px 100%;
+        background-image: url("/images/icici_success_sub_stepper.svg");
       }
       .icici_success_destination_checkbox {
         width: 20px;

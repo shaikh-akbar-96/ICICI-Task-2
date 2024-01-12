@@ -58,31 +58,30 @@ body {
   text-transform: capitalize;
   cursor: pointer;
 }
-.icici_main_container .icici_stepper {
+.icici_main_container .icici_stepper_index {
   position: relative;
   width: 100%;
 }
-.icici_main_container .icici_stepper .icici_line {
+.icici_main_container .icici_stepper_index .icici_line_index {
   position: relative;
   height: 1px;
   width: 91%;
   left: 3%;
-  background: linear-gradient(to right, transparent 33.33%, #c4c4c4 33.33%, #c4c4c4 80.66%, transparent 66.66%);
-  background-size: 20px 100%;
+  background-image: url("/images/icici_index_stepper.svg");
 }
-.icici_main_container .icici_stepper .icici_destination_checkbox {
+.icici_main_container .icici_stepper_index .icici_destination_checkbox {
   width: 20px;
   height: 20px;
   position: absolute;
   top: -15px;
 }
-.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(2) {
+.icici_main_container .icici_stepper_index .icici_destination_checkbox:nth-child(2) {
   left: 3%;
 }
-.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(3) {
+.icici_main_container .icici_stepper_index .icici_destination_checkbox:nth-child(3) {
   left: 47.33%;
 }
-.icici_main_container .icici_stepper .icici_destination_checkbox:nth-child(4) {
+.icici_main_container .icici_stepper_index .icici_destination_checkbox:nth-child(4) {
   left: 91%;
 }
 .icici_main_container .icici_title_container {
@@ -313,6 +312,8 @@ body {
   font-weight: 400;
   line-height: 16px;
   margin: 0 62px 11px 47px;
+}
+.icici_main_container .icici_wrapper .icici_terms_cond .icici_checkbox_1 {
   cursor: pointer;
 }
 .icici_main_container .icici_wrapper .icici_terms_cond .icici_link_term_condition {
@@ -332,6 +333,8 @@ body {
   height: 16px;
   line-height: 16px;
   margin: 0 0px 30px 47px;
+}
+.icici_main_container .icici_wrapper .icici_terms_cond2 .icici_checkbox_2 {
   cursor: pointer;
 }
 .icici_main_container .icici_wrapper .icici_proceed_btn {
@@ -364,6 +367,32 @@ body {
 .icici_main_container .icici_main_wrapper {
   max-width: 720px;
   margin-bottom: 167px;
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid {
+  position: relative;
+  width: 100%;
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid .icici_line_grid {
+  position: relative;
+  height: 1px;
+  width: 91%;
+  left: 3%;
+  background-image: url("/images/icici_grid_stepper.svg");
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid .icici_destination_checkbox {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -15px;
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid .icici_destination_checkbox:nth-child(2) {
+  left: 3%;
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid .icici_destination_checkbox:nth-child(3) {
+  left: 47.33%;
+}
+.icici_main_container .icici_main_wrapper .icici_stepper_grid .icici_destination_checkbox:nth-child(4) {
+  left: 91%;
 }
 .icici_main_container .icici_grid_title_container {
   display: flex;
@@ -646,6 +675,32 @@ body {
   width: 960px;
   background-color: #f6f6f6;
 }
+.icici_main_container .icici_stepper_success_main {
+  position: relative;
+  width: 100%;
+}
+.icici_main_container .icici_stepper_success_main .icici_line_success_main {
+  position: relative;
+  height: 1px;
+  width: 91%;
+  left: 3%;
+  background-image: url("/images/icici_success_stepper.svg");
+}
+.icici_main_container .icici_stepper_success_main .icici_destination_checkbox {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -15px;
+}
+.icici_main_container .icici_stepper_success_main .icici_destination_checkbox:nth-child(2) {
+  left: 3%;
+}
+.icici_main_container .icici_stepper_success_main .icici_destination_checkbox:nth-child(3) {
+  left: 47.33%;
+}
+.icici_main_container .icici_stepper_success_main .icici_destination_checkbox:nth-child(4) {
+  left: 91%;
+}
 .icici_main_container .icici_success_container {
   width: 720px;
   border-radius: 10px;
@@ -725,11 +780,10 @@ body {
 .icici_main_container .icici_success_container .icici_success_stepper .icici_success_line {
   position: relative;
   height: 1px;
-  width: 76%;
+  width: 74%;
   left: 10%;
   margin-bottom: 35px;
-  background: linear-gradient(to right, transparent 33.33%, #c4c4c4 33.33%, #c4c4c4 80.66%, transparent 66.66%);
-  background-size: 20px 100%;
+  background-image: url("/images/icici_success_sub_stepper.svg");
 }
 .icici_main_container .icici_success_container .icici_success_stepper .icici_success_destination_checkbox {
   width: 20px;

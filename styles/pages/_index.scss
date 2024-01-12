@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-
 .icici_main_container {
   width: 960px;
   background-color: #f6f6f6;
@@ -51,22 +50,15 @@
     }
   }
 
-  .icici_stepper {
+  .icici_stepper_index {
     position: relative;
     width: 100%;
-    .icici_line {
+    .icici_line_index {
       position: relative;
       height: 1px;
       width: 91%;
       left: 3%;
-      background: linear-gradient(
-        to right,
-        transparent 33.33%,
-        #c4c4c4 33.33%,
-        #c4c4c4 80.66%,
-        transparent 66.66%
-      );
-      background-size: 20px 100%;
+      background-image: url("/images/icici_index_stepper.svg");
     }
     .icici_destination_checkbox {
       width: 20px;
@@ -342,7 +334,11 @@
       font-weight: 400;
       line-height: 16px;
       margin: 0 62px 11px 47px;
-      cursor: pointer;
+
+      .icici_checkbox_1 {
+        cursor: pointer;
+      }
+
       .icici_link_term_condition {
         color: #176abe;
         font-family: Open Sans;
@@ -361,7 +357,10 @@
       height: 16px;
       line-height: 16px;
       margin: 0 0px 30px 47px;
-      cursor: pointer;
+
+      .icici_checkbox_2 {
+        cursor: pointer;
+      }
     }
     .icici_proceed_btn {
       @include btn();
